@@ -24,7 +24,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
             autoConnect
             slushWallet={{
               name: "Slush Wallet",
-              origin: "https://my.slush.app/",
+              origin: "https://test-sui-c8vc.vercel.app"
             }}
           >
             <RouterProvider router={routes} />
