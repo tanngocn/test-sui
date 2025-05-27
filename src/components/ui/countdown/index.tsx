@@ -13,7 +13,7 @@ const DateTimeDisplay = ({ value, type }: {value:number, type:string}) => {
 
 const CountdownTimer = ({ targetDate }: {targetDate: number}) => {
 
-  const renderer = ({ days, hours, minutes, seconds, completed }: { days: number; hours: number; minutes: number; seconds: number; completed: boolean }) => {
+  const renderer = ({ days, hours, minutes, completed }: { days: number; hours: number; minutes: number; seconds: number; completed: boolean }) => {
     if (completed) {
       return <span>Time's up!</span>;
     } else {

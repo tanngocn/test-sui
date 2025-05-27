@@ -9,7 +9,7 @@ import SectionCommon from "@/components/common/Section";
 import { LAYOUT_GRID, LAYOUT_ROW, STATUS_POOL } from "@/constants/common";
 import { Search } from "lucide-react";
 import { useState } from "react";
-import { debounce } from "lodash";
+// import { debounce } from "lodash";
 const rows = [
   {
     label: "Total Raise",
@@ -34,20 +34,21 @@ const ProjectsPage = () => {
     page: 1,
   });
   const total = 10;
-  const handleSort = () => {};
-  const handleFilter = (values: unknown) => {};
+  // const handleSort = () => {};
+  // const handleFilter = (values: unknown) => {};
 
-  const handleSwitch = (value: boolean) => {};
+  const handleSwitch = (value: boolean) => {console.log(value);
+  };
 
-  const debounceSearch = debounce((value:string) => {
+  // const debounceSearch = debounce((value:string) => {
 
-    console.log(value);
+  //   console.log(value);
     
-    setSearchParams((prev: any) => ({
-      ...prev,
-      keyword:value,
-    }));
-  }, 2000);
+  //   setSearchParams((prev: any) => ({
+  //     ...prev,
+  //     keyword:value,
+  //   }));
+  // }, 2000);
 
 
   const onPageChange = (pageNumber: number) => {

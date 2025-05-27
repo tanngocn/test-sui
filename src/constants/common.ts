@@ -1,4 +1,3 @@
-import { APP_URL } from "../routes";
 
 export enum LAYOUT_GRID {
   SECTION = "section",
