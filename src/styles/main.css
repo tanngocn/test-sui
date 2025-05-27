@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  /* container */
+  --spacing: 1rem;
+  --color-primary: #46208f;
+  --color-secondary: #ffed4a;
+  --color-bg-primary: #202124;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-notification-green: #28a745;
+  --color-notification-red: #dc3545;
+  --color-notification-yellow: #ffc107;
+  --spacing: 0.25rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.title {
+}
+
+
+.container{
+  @apply lg:max-w-[1280px] md:max-w-[991px] max-w-[100%] mx-auto md:px-8 px-4; 
+}
+button:focus-visible, input:focus-visible, textarea:focus-visible, input:focus, textarea:focus {
+  outline: none;
+  box-shadow: none;
+}
